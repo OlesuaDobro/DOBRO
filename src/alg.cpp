@@ -15,12 +15,12 @@ bool checkPrime(uint64_t value) {
     return isPrime;
 }
 uint64_t nPrime(uint64_t n) {
-    uint64_t pos = 0;
+    uint64_t p = 0;
     for (uint64_t i = 2; i < 10000000; i++) {
         if (checkPrime(i) == true) {
-            pos++;
+            p++;
         }
-        if (pos == n) {
+        if (p == n) {
             return i;
         }
     }
@@ -35,11 +35,11 @@ uint64_t nextPrime(uint64_t value) {
     return 1;
 }
 uint64_t sumPrime(uint64_t hbound) {
-    uint64_t summa = 0;
+    uint64_t s = 0;
     for (uint64_t i = 1; i <= hbound; i++) {
         if (checkPrime(i) == true) {
-            summa += i;
+            s += i;
         }
     }
-    return summa;
+    return s;
 }
