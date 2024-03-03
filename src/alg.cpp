@@ -8,8 +8,7 @@ bool checkPrime(uint64_t value) // функция для проверки явл
     if (value < 1)
     {
         isPrime = false;
-    }
-    else {
+    } else {
         for (int i = 2; i < value / 2; i++)
         {
             if (value % i == 0)
