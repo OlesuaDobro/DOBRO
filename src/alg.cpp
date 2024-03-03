@@ -2,7 +2,7 @@
 #include "alg.h"
 bool checkPrime(uint64_t value) {
     bool isPrime = true;
-    if (value < 1 || value == 4) {
+    if (value == 1 || value == 4 || value == 0) {
         isPrime = false;
     } else {
         for (int i = 2; i < value / 2; i++) {
