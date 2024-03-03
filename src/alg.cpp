@@ -16,7 +16,7 @@ bool checkPrime(uint64_t value) {
 }
 uint64_t nPrime(uint64_t n) {
     uint64_t pos = 0;
-    for (uint64_t i = 2; i < 1000; i++) {
+    for (uint64_t i = 2; i < 10000000; i++) {
         if (checkPrime(i) == true) {
             pos++;
         }
@@ -24,10 +24,10 @@ uint64_t nPrime(uint64_t n) {
             return i;
         }
     }
-    return 000;
+    return 0;
 }
 uint64_t nextPrime(uint64_t value) {
-    for (uint64_t i = value + 1; i < 1000; i++) {
+    for (uint64_t i = value + 1; i < 100000000; i++) {
         if (checkPrime(i) == true) {
             return i;
         }
