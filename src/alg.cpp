@@ -27,7 +27,7 @@ uint64_t nPrime(uint64_t n) {
     return 0;
 }
 uint64_t nextPrime(uint64_t value) {
-    for (uint64_t i = value + 1; i < 100000000; i++) {
+    for (uint64_t i = value + 1; i < 10000000; i++) {
         if (checkPrime(i) == true) {
             return i;
         }
